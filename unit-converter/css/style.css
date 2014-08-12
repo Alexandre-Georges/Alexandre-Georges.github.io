@@ -1,0 +1,13 @@
+.container {
+  margin: 0 15px 0 15px;
+}
+
+.unit {
+  padding-bottom: 20px;
+}
+
+.unit h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}

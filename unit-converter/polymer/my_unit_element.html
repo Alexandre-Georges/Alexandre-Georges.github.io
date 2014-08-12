@@ -1,0 +1,24 @@
+<link rel="import" href="packages/polymer/polymer.html" />
+<polymer-element name="my-unit">
+  <template>
+
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    
+    <style type="text/css">
+      .unitRow {
+        margin: 5px 10px 0 10px;
+      }
+    </style>
+    <div class="unitRow">
+      <div class="row">
+        {{unit.name}}
+      </div>
+      <div class="row">
+        <input type="text" class="form-control" placeholder="{{unit.name}}" value="{{value}}" on-change="{{onMyChange}}">
+      </div>
+    </div>
+  </template>
+  <script type="application/dart" src="my_unit_element.dart"></script>
+</polymer-element>

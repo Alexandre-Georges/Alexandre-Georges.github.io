@@ -1,0 +1,23 @@
+<link rel="import" href="packages/polymer/polymer.html" />
+<link rel="import" href="my_unit_element.html">
+<polymer-element name="my-model">
+  <template>
+
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+  
+    <div class="col-md-3 col-sm-4 col-xs-12 unit" style="background-color: {{color}};">
+
+      <h2>{{model.name}}</h2>
+      <template bind>
+        <my-unit unit="{{model.referenceUnit}}"></my-unit>
+      </template>
+      <template repeat="{{unit in model.units}}">
+        <my-unit unit="{{unit}}" reference="{{model.referenceUnit}}"></my-unit>
+      </template>
+
+    </div>
+  </template>
+  <script type="application/dart" src="my_model_element.dart"></script>
+</polymer-element>
