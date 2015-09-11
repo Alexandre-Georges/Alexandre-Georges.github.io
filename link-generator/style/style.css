@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+    background-color: #862D2D;
+}
+
+#content {
+    display: table;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.link-box {
+    height: 100%;
+    margin: 0 auto;
+    display: table;
+}
+
+.row {
+    display: table-row;
+    height: 20%;
+    text-align: center;
+}
+
+.rest {
+    display: table-row;
+    height: auto;
+}
+
+input {
+    display: table-row;
+    font-size: 7em;
+    text-align: center;
+    width: 8em;
+}
+
+.link {
+    font-size: 10em;
+    color: #d3c527;
+}
