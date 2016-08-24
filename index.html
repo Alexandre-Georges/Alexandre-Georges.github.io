@@ -7,12 +7,35 @@
     <meta name="keywords" content="Alexandre, Georges, senior software developer">
     <title>Alexandre Georges - Senior Software Developer</title>
     <link rel="canonical" href="http://www.alexandre-georges.com" />
+    <link rel="shortcut icon" href="favicon.ico?v=1">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <style amp-custom>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: url('https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIpBw1xU1rKptJj_0jans920.woff2') format('truetype');
+        }
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 900;
+            src: url('https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2') format('truetype');
+        }
+
+        .roboto-loaded h2 {
+            font-family: 'Roboto';
+            font-size: 9vw;
+        }
+        .open-sans-loaded #presentation h3, .open-sans-loaded #values .badge ul, .open-sans-loaded #about .badge p, .open-sans-loaded #contact .badge p {
+            font-family: 'Open Sans';
+        }
+
         body {
             background-color: white;
             font-family: Arial;
@@ -40,12 +63,11 @@
             border: 0;
         }
         h2 {
-            font-size: 8vw;
-            font-weight: bold;
+            font-size: 8.5vw;
             margin: 3vh 0 0 0;
         }
         h3 {
-            font-size: 4vh;
+            font-size: 8vw;
             font-weight: normal;
         }
         ul {
@@ -65,6 +87,7 @@
             display: flex;
             align-items: center;
         }
+
         .table {
             display: table;
             width: 100%;
@@ -75,6 +98,7 @@
         .cell {
             display: table-cell;
         }
+
         #desktop-header {
             display: none;
             height: 10vh;
@@ -88,7 +112,8 @@
         }
         #desktop-header .table .cell {
             width: 19vw;
-            font-size: calc(1.5vh + 1.2vw);
+            font-family: 'Coustard';
+            font-size: calc(1.8vh + 1.5vw);
             vertical-align: middle;
             text-align: center;
         }
@@ -112,6 +137,9 @@
             }
             #desktop-header {
                 display: block;
+            }
+            .roboto-loaded .badge h2 {
+                font-size: 4.2vw;
             }
         }
         #mobile-header #hamburger {
@@ -182,13 +210,13 @@
             margin-bottom: 3vh;
         }
         #presentation .badge hr {
-            width: 60%;
+            width: 80%;
             height: 0.3vh;
             margin-top: 0;
         }
         #presentation .badge h3 {
             margin: 3vh 0;
-            line-height: 5vh;
+            line-height: calc(4vh + 4vw);
         }
         @media (min-width: 600px) {
             #presentation {
@@ -196,13 +224,20 @@
                 display: inherit;
             }
             #presentation .badge {
-                width: 30vw;
+                width: 33vw;
                 margin: 0;
                 padding: 0 2vw;
                 transform: translate(10vw, 20vh);
             }
             #presentation .badge h2 {
-                font-size: 5vh;
+                font-size: 3.5vw;
+            }
+            .roboto-loaded #presentation .badge h2 {
+                font-size: 3.8vw;
+            }
+            #presentation .badge h3 {
+                font-size: 3vw;
+                line-height: calc(2vh + 2.5vw);
             }
         }
         #values {
@@ -212,11 +247,12 @@
             width: 90%;
         }
         #values .badge hr {
-            width: 58vw;
+            width: 63vw;
         }
         #values .badge ul {
             padding: 2vh 5vw 0.1vh;
             font-size: calc(2vh + 2vw);
+            line-height: 4.8vh;
         }
         #values .badge li {
             margin-bottom: 2.5vh;
@@ -251,7 +287,7 @@
             color: #e07e25;
         }
         #toolbox .badge hr {
-            width: 80vw;
+            width: 87vw;
         }
         #toolbox .badge #mobile-logos amp-img {
             max-height: 125px;
@@ -313,7 +349,7 @@
         }
         #toolbox .badge #desktop-logos .cell {
             vertical-align: middle;
-            padding: 4vh 0;
+            padding: 3vh 0;
         }
         #toolbox .badge #desktop-logos amp-img {
             max-height: 200px;
@@ -330,7 +366,7 @@
                 font-size: 4vw;
             }
             #toolbox .badge hr {
-                width: 40vw;
+                width: 39vw;
             }
             #toolbox .badge #mobile-logos {
                 display: none;
@@ -350,13 +386,14 @@
             color: #fff500;
         }
         #about .badge hr {
-            width: 36vw;
+            width: 39vw;
             margin-bottom: 4vh;
         }
         #about .badge p {
             margin: 2vh 3vw;
             text-align: justify;
             font-size: calc(1.5vh + 1.5vw);
+            line-height: 1.3em;
         }
         #about .badge p:last-child {
             margin-bottom: 3vh;
@@ -401,13 +438,12 @@
         }
         #contact .badge #links.table {
             width: 40%;
-            margin: 0 auto 5vh auto;
+            margin: 2vh auto 8vh auto;
         }
         #contact .flex {
             display: flex;
             align-items: center;
             height: 100%;
-            padding-bottom: 5vh;
             width: 80%;
             margin: 0 auto;
         }
@@ -418,7 +454,7 @@
             height: 10%;
         }
         #contact .badge.table > .row:nth-child(2) > .cell {
-            height: 15%;
+            height: 5%;
         }
         #contact .badge.table > .row:last-child > .cell {
             height: 25%;
@@ -465,6 +501,8 @@
             }
         </script>
     </amp-analytics>
+    <amp-font layout="nodisplay" font-family="Roboto" timeout="2000" on-load-add-class="roboto-loaded"></amp-font>
+    <amp-font layout="nodisplay" font-family="Open Sans" timeout="2000" on-load-add-class="open-sans-loaded"></amp-font>
     <amp-sidebar id="mobile-menu" layout="nodisplay">
         <nav>
             <ul>
@@ -635,27 +673,29 @@
     </article>
     <article id="contact">
         <div class="badge table">
-                <div class="row"><div class="cell"><h2>Contact</h2></div></div>
-                <div class="row"><div class="cell"><hr/></div></div>
-                <div class="row"><div class="cell">
-                    <div class="flex"><div>
+            <div class="row"><div class="cell"><h2>Contact</h2></div></div>
+            <div class="row"><div class="cell"><hr/></div></div>
+            <div class="row"><div class="cell">
+                <div class="flex">
+                    <div>
                         <p>Want to know more about me?</p>
                         <p>Feel free to check my LinkedIn profile and to send me a message!</p>
-                    </div></div>
-                </div></div>
-                <div class="row"><div class="cell">
-                    <div id="links" class="table">
-                        <div class="row">
-                            <div class="cell">
-                                <a href="https://ca.linkedin.com/in/algeorges" target="_blank"><amp-img src="images/linkedIn-logo.png" alt="LinkedIn" height="68" width="68" layout="responsive"></amp-img></a>
-                            </div>
-                            <div class="cell"></div>
-                            <div class="cell">
-                                <a href="https://github.com/Alexandre-Georges" target="_blank"><amp-img src="images/github-logo.png" alt="Github" height="68" width="68" layout="responsive"></amp-img></a>
-                            </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="row"><div class="cell">
+                <div id="links" class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <a href="https://ca.linkedin.com/in/algeorges" target="_blank"><amp-img src="images/linkedIn-logo.png" alt="LinkedIn" height="68" width="68" layout="responsive"></amp-img></a>
+                        </div>
+                        <div class="cell"></div>
+                        <div class="cell">
+                            <a href="https://github.com/Alexandre-Georges" target="_blank"><amp-img src="images/github-logo.png" alt="Github" height="68" width="68" layout="responsive"></amp-img></a>
                         </div>
                     </div>
-                </div></div>
+                </div>
+            </div></div>
         </div>
     </article>
 </body>
