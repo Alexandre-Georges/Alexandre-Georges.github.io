@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Alexandre Georges" />
-    <meta name="description" content="Alexandre Georges website">
+    <meta name="description" content="Alexandre Georges - senior software developer - website">
     <meta name="keywords" content="Alexandre, Georges, senior software developer">
     <title>Alexandre Georges - Senior Software Developer</title>
     <link rel="canonical" href="http://alexandre-georges.github.io/" />
@@ -54,11 +54,11 @@
             src: url('https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2') format('truetype');
         }
 
-        .roboto-loaded h2 {
+        .roboto-loaded h1 {
             font-family: 'Roboto';
             font-size: 9vw;
         }
-        .open-sans-loaded #presentation h3, .open-sans-loaded #values .badge ul, .open-sans-loaded #about .badge p, .open-sans-loaded #contact .badge p {
+        .open-sans-loaded #presentation h2, .open-sans-loaded #values .badge ul, .open-sans-loaded #about .badge p, .open-sans-loaded #contact .badge p {
             font-family: 'Open Sans';
         }
 
@@ -88,11 +88,11 @@
             background-color: black;
             border: 0;
         }
-        h2 {
+        h1 {
             font-size: 8.5vw;
             margin: 3vh 0 0 0;
         }
-        h3 {
+        h2 {
             font-size: 8vw;
             font-weight: normal;
         }
@@ -164,7 +164,7 @@
             #desktop-header {
                 display: block;
             }
-            .roboto-loaded .badge h2 {
+            .roboto-loaded .badge h1 {
                 font-size: 4.2vw;
             }
         }
@@ -232,7 +232,7 @@
             width: 90%;
             transform: translate(0, -50%);
         }
-        #presentation .badge h2 {
+        #presentation .badge h1 {
             margin-bottom: 3vh;
         }
         #presentation .badge hr {
@@ -240,7 +240,7 @@
             height: 0.3vh;
             margin-top: 0;
         }
-        #presentation .badge h3 {
+        #presentation .badge h2 {
             margin: 3vh 0;
             line-height: calc(4vh + 4vw);
         }
@@ -255,13 +255,13 @@
                 padding: 0 2vw;
                 transform: translate(10vw, 20vh);
             }
-            #presentation .badge h2 {
+            #presentation .badge h1 {
                 font-size: 3.5vw;
             }
-            .roboto-loaded #presentation .badge h2 {
+            .roboto-loaded #presentation .badge h1 {
                 font-size: 3.8vw;
             }
-            #presentation .badge h3 {
+            #presentation .badge h2 {
                 font-size: 3vw;
                 line-height: calc(2vh + 2.5vw);
             }
@@ -292,7 +292,7 @@
                 margin: 0 0 0 2vw;
                 width: 30%;
             }
-            #values .badge h2 {
+            #values .badge h1 {
                 font-size: 4vw;
             }
             #values .badge hr {
@@ -388,7 +388,7 @@
             #toolbox .badge {
                 width: 95%;
             }
-            #toolbox .badge h2 {
+            #toolbox .badge h1 {
                 font-size: 4vw;
             }
             #toolbox .badge hr {
@@ -436,7 +436,7 @@
                 border: 0;
                 border-radius: 0;
             }
-            #about .badge h2 {
+            #about .badge h1 {
                 font-size: 4vw;
             }
             #about .badge hr {
@@ -493,7 +493,7 @@
                 width: 50vw;
                 height: 50vw;
             }
-            #contact .badge h2 {
+            #contact .badge h1 {
                 font-size: 4vw;
             }
             #contact .badge hr {
@@ -503,30 +503,6 @@
     </style>
 </head>
 <body>
-    <amp-analytics type="googleanalytics">
-        <script type="application/json">
-            {
-                "vars": {
-                    "account": "UA-40524247-6"
-                },
-                "triggers": {
-                    "trackPageview": {
-                        "on": "visible",
-                        "request": "pageview"
-                    },
-                    "trackEvent": {
-                        "selector": "header, nav, article",
-                        "on": "click",
-                        "request": "event",
-                        "vars": {
-                            "eventCategory": "ui-components",
-                            "eventAction": "click"
-                        }
-                    }
-                }
-            }
-        </script>
-    </amp-analytics>
     <amp-font layout="nodisplay" font-family="Roboto" timeout="2000" on-load-add-class="roboto-loaded"></amp-font>
     <amp-font layout="nodisplay" font-family="Open Sans" timeout="2000" on-load-add-class="open-sans-loaded"></amp-font>
     <amp-sidebar id="mobile-menu" layout="nodisplay">
@@ -574,14 +550,14 @@
     </header>
     <article id="presentation">
         <div class="badge">
-            <h2>Alexandre Georges</h2>
+            <h1>Alexandre Georges</h1>
             <hr/>
-            <h3>Senior Software<br>Developer</h3>
+            <h2>Senior Software<br>Developer</h2>
         </div>
     </article>
     <article id="values">
         <div class="badge">
-            <h2>My Core <b>Values</b></h2>
+            <h1>My Core <b>Values</b></h1>
             <hr/>
             <ul>
                 <li><b>Quality</b> software craftmanship</li>
@@ -593,7 +569,7 @@
     </article>
     <article id="toolbox">
         <div class="badge">
-            <h2>My everyday-<b>Toolbox</b></h2>
+            <h1>My everyday-<b>Toolbox</b></h1>
             <hr/>
             <div id="mobile-logos">
                 <div class="table">
@@ -689,7 +665,7 @@
     </article>
     <article id="about">
         <div class="badge">
-            <h2>About <b>Me</b></h2>
+            <h1>About <b>Me</b></h1>
             <hr/>
             <p>I studied computer science in <b>France</b>, my native country, I got a bachelor and a <b>master/engineer</b> degrees in IT.</p>
             <p>After graduating, I moved to <b>Paris</b> where I worked for 5 years in a service company for multiple big clients mostly with Java. I worked on <b>high-traffic back-end</b> applications and also <b>websites</b> with HTML/CSS.</p>
@@ -699,7 +675,7 @@
     </article>
     <article id="contact">
         <div class="badge table">
-            <div class="row"><div class="cell"><h2>Contact</h2></div></div>
+            <div class="row"><div class="cell"><h1>Contact</h1></div></div>
             <div class="row"><div class="cell"><hr/></div></div>
             <div class="row"><div class="cell">
                 <div class="flex">
